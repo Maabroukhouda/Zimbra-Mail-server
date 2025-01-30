@@ -1,8 +1,3 @@
----
-title: Renew a Zimbra Mail Server SSL certificate
-
----
-
 # Renew a Zimbra Mail Server SSL certificate
 
 ## Introduction
