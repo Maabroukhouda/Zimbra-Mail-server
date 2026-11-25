@@ -7,14 +7,14 @@ Renewing the SSL certificate for your Zimbra Mail Server is essential for mainta
 ## SSH Connection to the Zimbra Server
 Make sure you are logged in as the root user or with sufficient privileges to manage Zimbra
 
-`ssh -p 9899 support@5.196.35.186`
+`ssh  support@ip`
 ## Downloading Certificate Files
 
 Download the files from the Gandi interface to your computer, then transfer them to your Zimbra server via SCP
 
-`scp /path/to/your/valomnia.crt support@5.196.35.186:/home/support`
+`scp /path/to/your/cert.crt support@ip:/home/support`
 
-`scp /path/to/your/intermediate.pem support@5.196.35.186:/home/support`
+`scp /path/to/your/intermediate.pem support@ip:/home/support`
 
 Then, move the certificate and the intermediate file to `/opt/zimbra/ssl/zimbra/commercial/`
 
@@ -35,7 +35,7 @@ Once you have obtained the certificate signed by Gandi and the intermediate chai
 
 * Combine the intermediate certificate chain and the final certificate into a single file
 
-`cat valomnia.crt Intermediare.pem > commercial2025.crt`
+`cat cert.crt Intermediare.pem > commercial2025.crt`
 
 * Install the new certificate
 
