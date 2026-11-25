@@ -47,6 +47,7 @@ Once you have obtained the certificate signed by Gandi and the intermediate chai
 * Verify that the certificate has been installed correctly
 
 `/opt/zimbra/bin/zmcertmgr viewdeployedcrt`
+
 ![valomnia-viewdep](assets/valomnia-viewdep.png)
 
 ## Redémarrer Zimbra
